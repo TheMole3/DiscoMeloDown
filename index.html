@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="se">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="DISCO MELO, ett låg- och mellanstadiedisco i Finspång"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <meta name="viewport" id="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Disco Melo är nere</title>
+
+    <style>
+    @font-face {
+        font-family: DiscoFont;
+        src: url(./discoFont.ttf);
+    }
+    @font-face {
+        font-family: Oswald;
+        src: url(./oswald.woff2);
+    }
+
+
+    body, html {
+        width: 100vw;
+        height: 100vh;
+        margin:0;
+        background-color: #e7c9e4;
+        display: flex;
+        justify-content: center;
+    }
+
+    iframe {
+        position: absolute;
+
+        max-width: 100vw;
+        width: calc(100vh * 0.5);
+        max-width: 100%;
+
+        transform: translate(-50%);
+        left: 50%;
+
+        height: 100vh;
+        border: 0;
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+
+    #navBarBehind {
+        z-index: 0;
+        position: absolute;
+
+        text-align: center;
+        top: 5vh;
+
+        width: 100vw;
+        height: calc((( 100vh * 0.5 ) / 100) * 12);
+
+        background-color: #843395;
+
+        filter: drop-shadow(0px 2px 6px black);
+    }
+
+    #title {
+        margin: 0;
+        font-family: DiscoFont; 
+        font-size: calc((( 100vh * 0.5 ) / 100) * 20);
+        color: #e08966;
+        line-height: calc((( 100vh * 0.5 ) / 100) * 12);
+        filter: drop-shadow(0px 0px 3px #2f3e47)
+    }
+
+    .box {
+        text-align: center;
+        position: absolute;
+        background-color: white;
+
+        top: calc((( 100vh * 0.5 ) / 100) * 50);
+        width: calc((( 100vh * 0.5 ) / 100) * 70);
+
+        padding: 5vw 3vw;
+
+        border-radius: 10px;
+        border: 1px solid #e1e1e1;
+        filter: drop-shadow(0px 0px 6px gray);
+
+        font-family: "Oswald";
+        font-weight: 100;
+        font-size: calc((( 100vh * 0.5 ) / 100) * 5);
+        letter-spacing: 0.1vmin;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div id="navBarBehind"><span id="title">DISCO MELO</span></div>
+    <div class="box">Tyvärr har Disco Melo hemsidan tekniska problem<br/><br/>Vi jobbar på att lösa dem så snabbt som möjligt</div>
+</body>
+
+</html>
